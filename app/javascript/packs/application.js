@@ -11,7 +11,7 @@ import "bootstrap"
 import "../stylesheets/application"
 
 function slideView(){
-    if(($('#videoPage').hasClass('col-6'))&&($('#audioPage').hasClass('col-6'))){
+    if(($('#videoPage').hasClass('col-md-6'))&&($('#audioPage').hasClass('col-md-6'))){
         $('#featureVideo').removeClass('displayNone')
         $('#featureVideo').addClass('display')
         $('#videoResume').removeClass('display')
@@ -20,7 +20,7 @@ function slideView(){
         $('#audioResume').removeClass('display')
         $('#audioResume').addClass('displayNone')
     }
-    else if(($('#videoPage').hasClass('col-2'))&&($('#audioPage').hasClass('col-10'))){
+    else if(($('#videoPage').hasClass('col-md-2'))&&($('#audioPage').hasClass('col-md-10'))){
         $('#audioPage').removeClass('audioBG')
         $('#audioResume').removeClass('displayNone')
         $('#audioResume').addClass('display')
@@ -29,7 +29,7 @@ function slideView(){
         $('#featureVideo').removeClass('displayNone')
         $('#featureVideo').addClass('display')
     }
-    else if(($('#videoPage').hasClass('col-10'))&&($('#audioPage').hasClass('col-2'))){
+    else if(($('#videoPage').hasClass('col-md-10'))&&($('#audioPage').hasClass('col-md-2'))){
         $('#audioPage').addClass('audioBG')
         $('#audioResume').removeClass('display')
         $('#audioResume').addClass('displayNone')
@@ -41,60 +41,60 @@ function slideView(){
 }
 function openVideoPage(tag){
  $(tag).click(()=>{
-    if($('#videoPage').hasClass('col-2')){
-        $('#videoPage').removeClass('col-2')
-        $('#videoPage').addClass('col-10')
-        $('#audioPage').removeClass('col-10 col-6')
-        $('#audioPage').addClass('col-2')
+    if($('#videoPage').hasClass('col-md-2')){
+        $('#videoPage').removeClass('col-md-2')
+        $('#videoPage').addClass('col-md-10')
+        $('#audioPage').removeClass('col-md-10 col-md-6')
+        $('#audioPage').addClass('col-md-2')
         slideView()
     }
-     else if($('#videoPage').hasClass('col-10')){
-         $('#videoPage').removeClass('col-10')
-         $('#videoPage').addClass('col-6')
-         $('#audioPage').removeClass('col-10 col-2')
-         $('#audioPage').addClass('col-6')
+     else if($('#videoPage').hasClass('col-md-10')){
+         $('#videoPage').removeClass('col-md-10')
+         $('#videoPage').addClass('col-md-6')
+         $('#audioPage').removeClass('col-md-10 col-md-2')
+         $('#audioPage').addClass('col-md-6')
          slideView()
     }
-    else if($('#videoPage').hasClass('col-6')){
-        $('#videoPage').removeClass('col-6')
-        $('#videoPage').addClass('col-10')
-        $('#audioPage').removeClass('col-6 col-10')
-        $('#audioPage').addClass('col-2')
+    else if($('#videoPage').hasClass('col-md-6')){
+        $('#videoPage').removeClass('col-md-6')
+        $('#videoPage').addClass('col-md-10')
+        $('#audioPage').removeClass('col-md-6 col-md-10')
+        $('#audioPage').addClass('col-md-2')
         slideView()
     }
  })
 }
 function openAudioPage(tag){
  $(tag).click(()=>{
-    if($('#audioPage').hasClass('col-2')){
-        $('#videoPage').removeClass('col-10 col-6')
-        $('#videoPage').addClass('col-2')
-        $('#audioPage').removeClass('col-2')
-        $('#audioPage').addClass('col-10')
+    if($('#audioPage').hasClass('col-md-2')){
+        $('#videoPage').removeClass('col-md-10 col-md-6')
+        $('#videoPage').addClass('col-md-2')
+        $('#audioPage').removeClass('col-md-2')
+        $('#audioPage').addClass('col-md-10')
         slideView()
     }
-     else if($('#audioPage').hasClass('col-10')){
-        $('#audioPage').removeClass('col-10')
-        $('#audioPage').addClass('col-6')
-        $('#videoPage').removeClass('col-10 col-2')
-        $('#videoPage').addClass('col-6')
+     else if($('#audioPage').hasClass('col-md-10')){
+        $('#audioPage').removeClass('col-md-10')
+        $('#audioPage').addClass('col-md-6')
+        $('#videoPage').removeClass('col-md-10 col-md-2')
+        $('#videoPage').addClass('col-md-6')
         slideView()
     }
-    else if($('#audioPage').hasClass('col-6')){
-        $('#videoPage').removeClass('col-6 col-10')
-        $('#videoPage').addClass('col-2')
-        $('#audioPage').removeClass('col-6')
-        $('#audioPage').addClass('col-10')
+    else if($('#audioPage').hasClass('col-md-6')){
+        $('#videoPage').removeClass('col-md-6 col-md-10')
+        $('#videoPage').addClass('col-md-2')
+        $('#audioPage').removeClass('col-md-6')
+        $('#audioPage').addClass('col-md-10')
         slideView()
     }
  })
 }
 function resetPage(tag){
  $(tag).click(()=>{
-        $('#audioPage').removeClass('col-10 col-2')
-        $('#audioPage').addClass('col-6')
-        $('#videoPage').removeClass('col-10 col-2')
-        $('#videoPage').addClass('col-6')
+        $('#audioPage').removeClass('col-md-10 col-md-2')
+        $('#audioPage').addClass('col-md-6')
+        $('#videoPage').removeClass('col-md-10 col-md-2')
+        $('#videoPage').addClass('col-md-6')
         slideView()
     })
 }

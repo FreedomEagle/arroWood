@@ -134,25 +134,27 @@
     font-size: 10vh;
 }
 #aboutUsContent{
-    background-color:black;
-    height:40vh;
+    height:60vh;
     border-color:white;
-    margin: 5% 10% 5% 10%
+    overflow:hidden;
+    margin: 2% 0 0% 0 ;
+
 }
 .aboutUsImg1{
+    overflow:hidden;
+    width:100%;
+    border-radius:15%;
     position:absolute;
-    right:0;
-    height:100%;
-    padding-bottom:5% ;
-    padding-top:5%;
-    border-radius:25%;
+    bottom: -20%;
+    left: 0 ;
 }   
 .aboutUsContent1 h3{
     text-align:center;
-    color:white;
-    font-size:3vw;
     padding-top:5%;
-}
+    color:white ;
+    font-family: 'Bevan';
+    font-size: 6vh;
+    }
 #videoPage{
     height:95vh ;
     margin-bottom:0;
@@ -169,6 +171,7 @@
     width:10vw;
     color:black;
     cursor:pointer;
+
 }
     .videoText h1{
    position:fixed;
@@ -185,7 +188,6 @@
     color:white; 
     font-size: 14vh;
     padding-top:3%;
-    padding-right: 80vw;
 }
 .videoTextHor{
     writing-mode: horizontal-tb;
@@ -226,7 +228,8 @@
     color:white; 
     font-size: 14vh;
     right:0px;
-    padding-top: 3%;
+    padding: 3% 0 0 0 ;
+    margin:0 0 0 0 ;
 }
 .audioTextHor{
     writing-mode: horizontal-tb;
@@ -248,6 +251,7 @@
     overflow:hidden;
     height: 99%;
     opacity: 100%;
+    margin-left:0%
 }
 .videoWork{
     position:absolute;
@@ -367,6 +371,25 @@
     top:65%;
     padding-top:0;
 }
+
+.aboutUsImg1{
+    background-image: url('paulo.jpg');
+    height:100%;
+    width:100%;
+    border-radius:15%;
+    position:absolute;
+    bottom: -5%;
+    left: 0 ;
+}   
+.aboutUsContent1 h3{
+    text-align:center;
+    color:white;
+    font-size:2.5vh;
+    border-style:2px;
+    margin-top:10%;
+    background-color:transparent;
+    opacity:80%;
+}
 #aboutUsLink{
     position:absolute;
     left:0;
@@ -377,7 +400,7 @@
     padding-top:0;
 }
 #aboutUsContent{
-    background-color:black;
+    background-color:transparent;
     height:40vh;
     border-color:white;
     margin: 0 0 0 0 ;
@@ -401,7 +424,7 @@
     height:80vh
 }
 #videoWords{
-   position:fixed;
+    position:fixed;
     opacity:80%;
     background-color:transparent;
     height:100%;
@@ -410,11 +433,10 @@
 }
 .videoText h1{
     margin: 0 0 0 0;
-    padding: 3% 0% 0% 0% ; 
     font-size: 12vw;
 }
 #videoPage{
-    height:80vh;
+    height:60vh;
 }
 .audioText h1{
     margin: 0 0 0 0 ;
@@ -424,9 +446,8 @@
 }
 .homeVideo{
     overflow: hidden;     
-    height:auto;
     height:100%;
-    margin: 0 0 0 0;
+    margin: 0 0% 0 -40%;
     padding: 0 0 0 0;
     
 }
@@ -437,7 +458,7 @@
     background-image: url(mic.JPG);
     background-repeat:no-repeat;
     background-size: auto 100vh;
-    background-position-x:60%;
+    background-position-x:50%;
     background-position-y:0%;
     opacity:80%;
 }
@@ -464,6 +485,10 @@
     margin:0% 0 0 0;
     padding:0 0% 0 0;
     margin-bottom: 3%;
+}
+.contactForm{
+    color: white;
+    background-image:none;
 }
 
 
