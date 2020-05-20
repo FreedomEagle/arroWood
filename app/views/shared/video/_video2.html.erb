@@ -1,0 +1,27 @@
+<div class = 'videoContainer' id= 'video2'>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('video2', {
+            height: '80%',
+            width: '80%',
+            videoId: 'WY3FqoxcJWw', // Example video ID
+            events: {
+                'onStateChange': function(event) {
+                var player1 = document.getElementById('video2')
+                        
+                if (event.data == YT.PlayerState.PLAYING) {
+                       
+                    player1.classList.add('videoHeight')    
+                }
+                if (player.getPlayerState() == -1 ||  player.getPlayerState() == 0  || player.getPlayerState() == 2  ) {
+                    player1.classList.remove('videoHeight')
+                }
+                }
+            }
+            });
+        }
+        </script> 
+</div>
+ 

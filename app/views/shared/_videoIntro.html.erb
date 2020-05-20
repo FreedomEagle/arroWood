@@ -1,0 +1,140 @@
+<div class = 'col-6 opaque' id = 'videoPage'>
+    <div class = 'videoText'>
+        <h1 id='videoWords' class='videoTextVert'> VIDEO</h1>
+    </div>
+    
+    <div id = 'videoIntro'> 
+        <%= video_tag "AW.mp4", :autoplay => true, muted: true, loop: :loop, class: "homeVideo" , id: "featureVideo", size: "100%x100%"; %>
+        <div class= 'displayNone' id = 'videoResume'>
+            <div class = 'videoContainer' id = 'video1'>
+            </div>   
+            <div class = 'videoContainer' id = 'video2'>
+            </div>   
+            <div class = 'videoContainer' id = 'video3'>
+            </div> 
+            <div class = 'videoContainer' id = 'video4'>
+            </div>   
+        </div>
+    </div>
+</div>
+           
+            <script src="https://www.youtube.com/iframe_api"></script>
+            <script>
+                function onYouTubeIframeAPIReady() {
+                    player = new YT.Player('video1', {
+                    height: '80%',
+                    width: '80%',
+                    videoId: '1l-pZrfbqy8', // Example video ID
+                    events: {
+                        'onStateChange': function(event) {
+                        var player1 = document.getElementById('video1')
+                        
+                        if (event.data == YT.PlayerState.PLAYING) {
+                            player1.classList.add('videoHeight')  
+                            var vid = document.getElementById('video1')  
+                            vid.scrollIntoView();
+                        }
+                        if (player.getPlayerState() == -1 ||  player.getPlayerState() == 0 ||  player.getPlayerState() == 2 ) {
+                            player1.classList.remove('videoHeight')
+                        }
+                        }
+                    }
+                    });
+                    player2 = new YT.Player('video2', {
+                    height: '80%',
+                    width: '80%',
+                    videoId: 'WY3FqoxcJWw', // Example video ID
+                    events: {
+                        'onStateChange': function(event) {
+                        var player2Cont = document.getElementById('video2')
+                        
+                        if (event.data == YT.PlayerState.PLAYING) {
+                            player2Cont.classList.add('videoHeight') 
+                            var vid = document.getElementById('video2')  
+                            vid.scrollIntoView();
+                        }
+                        if (player2.getPlayerState() == -1 ||  player2.getPlayerState() == 0 ||  player2.getPlayerState() == 2 ) {
+                            player2Cont.classList.remove('videoHeight')
+                        }
+                        }
+                    }
+                    });
+                    player3 = new YT.Player('video3', {
+                    height: '80%',
+                    width: '80%',
+                    videoId: 'H77PQmSY_50', // Example video ID
+                    events: {
+                        'onStateChange': function(event) {
+                        var player3Cont = document.getElementById('video3')
+                        
+                        if (event.data == YT.PlayerState.PLAYING) {
+                            player3Cont.classList.add('videoHeight')    
+                            var vid = document.getElementById('video3')  
+                            vid.scrollIntoView();
+                        }
+                        if (player3.getPlayerState() == -1 ||  player3.getPlayerState() == 0 ||  player3.getPlayerState() == 2  ) {
+                            player3Cont.classList.remove('videoHeight')
+                        }
+                        }
+                    }
+                    });
+                    player4 = new YT.Player('video4', {
+                    height: '80%',
+                    width: '80%',
+                    videoId: 'rnOfXJcYW84', // Example video ID
+                    events: {
+                        'onStateChange': function(event) {
+                        var player4Cont = document.getElementById('video4')
+                        
+                        if (event.data == YT.PlayerState.PLAYING) {
+                            player4Cont.classList.add('videoHeight')  
+                            var vid = document.getElementById('video4')  
+                            vid.scrollIntoView();
+                        }
+                        if (player4.getPlayerState() == -1 ||  player4.getPlayerState() == 0  ||  player4.getPlayerState() == 2 ) {
+                            player4Cont.classList.remove('videoHeight')
+                        }
+                        }
+                    }
+                    });
+                    player5 = new YT.Player('audio1', {
+                    height: '80%',
+                    width: '80%',
+                    videoId: 'KorI2eZgxBQ', // Example video ID
+                    events: {
+                        'onStateChange': function(event) {
+                        var player5Cont = document.getElementById('audio1')
+                        
+                        if (event.data == YT.PlayerState.PLAYING) {
+                            player5Cont.classList.add('videoHeight')  
+                            var vid = document.getElementById('audio1')  
+                            vid.scrollIntoView();
+                        }
+                        if (player5.getPlayerState() == -1 || player5.getPlayerState() == 0 || player5.getPlayerState() == 2  ) {
+                            player5Cont.classList.remove('videoHeight')
+                        }
+                        }
+                    }
+                    });       
+                    player6 = new YT.Player('audio2', {
+                    height: '80%',
+                    width: '80%',
+                    videoId: '_UFhnEYtSWI', // Example video ID
+                    events: {
+                        'onStateChange': function(event) {
+                        var player6Cont = document.getElementById('audio2')
+                        
+                        if (event.data == YT.PlayerState.PLAYING) {
+                            player6Cont.classList.add('videoHeight')  
+                            var vid = document.getElementById('audio2')  
+                            vid.scrollIntoView();
+                        }
+                        if (player6.getPlayerState() == -1 || player6.getPlayerState() == 0 || player6.getPlayerState() == 2  ) {
+                            player6Cont.classList.remove('videoHeight')
+                        }
+                        }
+                    }
+                    }); 
+                }
+            </script>
+           

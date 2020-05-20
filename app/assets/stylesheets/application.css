@@ -1,0 +1,471 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap";
+ @import "~bootstrap/scss/bootstrap";
+ @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bevan&Ropa+Sans&display=swap');
+
+ body{
+    overflow: auto;
+}
+
+.row [class*='col-'] {
+    transition: all 0.5s ease-in-out;
+}
+
+.col-6 {
+    flex-grow: 1;
+    transition: all 400ms ease;
+  }
+  
+  .col-2 {
+    width: 0; 
+    flex-shrink: 1;
+    transition: all 400ms ease;
+  }
+
+.container-fluid{
+    position:absolute;
+    width:100%;
+    
+    overflow: auto;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-image:url('wall4.jpg');
+}
+#logoBox{
+    height: 100vh;
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0;
+}
+.logoVid{
+    width:100vw;
+    height:auto;
+    margin:0 0% 0  0 ;
+    padding: 0 0 0 0 ;
+}
+.bodyContainer{
+    background-image:url(wall4.jpg);
+    background-size:100vw auto;
+    background-position-x:35%;
+    background-position-y:25%;
+    width:100vw;
+}
+.navbar{
+    padding: 0 0 0 0 ;
+    background: url(logo16.png) center no-repeat , url(logo13.png) left no-repeat,  url(logo13.png) left no-repeat;
+    /*, url(logo13.png) right no-repeat; --> */
+    background-size: 30% auto ,45% auto ,20% auto;
+    /*, 40% auto ; */
+    background-color: #fec072;
+    height:18vh;
+    background-position: 50% 50%, -55% 25%, 94% 25%  ; 
+    width:100vw
+}
+.nav-item{
+    margin:0 0 0 0 ;
+    padding:0 0 0 0;
+}
+.nav-item a{
+    font-size: 4vh;
+}
+.insta{
+    width:2.5vw;
+}
+.youtube{
+    width:2.5vw;
+}
+#contactMe{
+    padding-left:3%;
+    font-family: 'Bevan';
+    font-size: 4vh;
+    color: white;
+    margin-bottom:0%;
+}
+#social{
+    height: 100%;
+    padding-right:7vw;
+    padding-top:25%;
+}
+#aboutUs{
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 0 0 0 ;
+    background-image: url(logo16.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: black;
+    height:15vh;
+}
+#aboutUsLink{
+    color:#6c1e04 ;
+    font-family: 'Bevan';
+    font-size: 4vh;
+    padding-top:15%;
+}
+#title{
+    opacity:100%;
+    color:white;
+    padding-top:2%;
+}
+.menuBar{
+    margin-top:0;
+    padding-top:0;
+    height:30vh;;
+}
+
+#contactPage{
+    height:15vh;
+}  
+#contactPage h1{
+    text-align: center;
+    font-size: 10vh;
+}
+#aboutUsContent{
+    background-color:black;
+    height:40vh;
+    border-color:white;
+    margin: 5% 10% 5% 10%
+}
+.aboutUsImg1{
+    position:absolute;
+    right:0;
+    height:100%;
+    padding-bottom:5% ;
+    padding-top:5%;
+    border-radius:25%;
+}   
+.aboutUsContent1 h3{
+    text-align:center;
+    color:white;
+    font-size:3vw;
+    padding-top:5%;
+}
+#videoPage{
+    height:95vh ;
+    margin-bottom:0;
+    background-color:transparent;
+    background-size: 100% auto;
+    background-position-y:10%;
+    border-bottom-width: 200px;
+    overflow-x:hidden;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top:2%;
+}
+.videoText{
+    width:10vw;
+    color:black;
+    cursor:pointer;
+}
+    .videoText h1{
+   position:fixed;
+    overflow:hidden;
+    opacity:80%;
+    background-color:transparent;
+    height:100%;
+    border-width:0;
+}
+
+.videoTextVert{
+    writing-mode: vertical-rl;
+    text-orientation: upright;   
+    color:white; 
+    font-size: 14vh;
+    padding-top:3%;
+    padding-right: 80vw;
+}
+.videoTextHor{
+    writing-mode: horizontal-tb;
+    text-orientation: upright;    
+    color:white;
+    font-size: 18vh;
+    padding:0 0 0 0 ;
+    margin-top:-2%;
+    left:10vw;
+    -webkit-text-stroke: 2px black
+}
+.audioBG{
+    background-image: url(mic8.jpg);
+    background-repeat:no-repeat;
+    background-size: 100vw auto;
+    background-position-x:60%;
+    background-position-y:15%;
+    opacity:80%;
+}
+#audioPage{
+    height: 95vh;
+    margin-bottom:0;
+    overflow-x:hidden;
+    border-radius:25px;
+    cursor: pointer;
+    margin-top:2%;
+}
+.audioText h1{
+    position: fixed;
+    overflow:hidden;
+    height:100%;
+    background-color:transparent;
+    border-width:0; 
+}
+.audioTextVert{
+     writing-mode: vertical-rl;
+    text-orientation: upright;   
+    color:white; 
+    font-size: 14vh;
+    right:0px;
+    padding-top: 3%;
+}
+.audioTextHor{
+    writing-mode: horizontal-tb;
+    text-orientation: upright;    
+    color:white;
+    font-size: 18vh;
+    padding:0 0 0 0 ;
+    margin-top:-2%;
+    left:60vw;
+    -webkit-text-stroke: 2px black;
+}
+.display {
+    display: inline;
+}
+.displayNone {
+    display: none;
+}
+.homeVideo{
+    overflow:hidden;
+    height: 99%;
+    opacity: 100%;
+}
+.videoWork{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+#videoIntro{
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0 ;
+    height: 95vh;
+}
+.videoContainer{
+    overflow:hidden;
+    position:relative;
+    padding-left:25%;
+    height:40%;
+    width:90%;
+    margin-bottom: 3%;
+}
+.audioContainer{
+    overflow:hidden;
+    position:relative;
+    padding-right:15%;
+    padding-left:15%;
+    height:40vh;
+    width:90%;
+    margin-bottom: 3%;
+}
+.videoHeight{
+    height:80vh;
+}
+
+#audioResume{
+    color:white;
+    height:auto ;
+    position: inline-block;
+}
+#videoResume{
+    color:white;
+    height:auto ;
+    position: inline-block;
+}
+#videoResume h1{
+    opacity: 80%
+}
+.opaque{
+    opacity: 90%
+}
+.notopaque{
+    opacity: 100%;
+}
+.lastVideo{
+    margin-bottom: 25%;
+}
+#footerBar{
+    position:fixed;
+    display:none;
+    bottom:0 ; 
+    left: 0;
+    width: 100vw;
+    background-color: red;
+    height:10vh
+    
+}
+.nav-link{
+    font-family:'Ropa Sans', sans-serif;; 
+    color: white;
+    font-size: 30px;
+    letter-spacing: 0.3vw;
+}
+.contactForm{
+    color: white;
+    background-image: url(pauloAudio2.jpeg);
+    background-size: 100% auto;
+    background-position-y: 30%;
+    background-position-x: 50%;
+}
+.contactFormQuestions{
+    text-align:center;
+}
+.contactForm label{
+    font-size: 150%;
+    margin-top:0.5%;
+}
+.btn{
+    margin-top:2%;
+    margin-bottom:2%;
+}
+#flash-message{
+    text-align:center;
+}
+@media only screen and (max-width: 500px) {
+.bodyContainer{
+    height:80vh;
+}
+.navbar{
+    padding: 0 0 0 0 ;
+    background: url(logo16.png) no-repeat ;
+    /*, url(logo13.png) right no-repeat; --> */
+    background-size: 80% auto ;
+    /*, 40% auto ; */
+    background-color:transparent;
+    background-position-x:50%;
+    background-position-y:-5vh;
+    height:20vh;
+}
+.nav-link{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+#contactMe{
+    position:absolute;
+    right:0;
+    font-family: 'Bevan';
+    font-size: 6vw;
+    color: white ;
+    top:65%;
+    padding-top:0;
+}
+#aboutUsLink{
+    position:absolute;
+    left:0;
+    color:white ;
+    font-family: 'Bevan';
+    font-size: 6vw;
+    top:65%;
+    padding-top:0;
+}
+#aboutUsContent{
+    background-color:black;
+    height:40vh;
+    border-color:white;
+    margin: 0 0 0 0 ;
+}
+#social{
+    height: 100%;
+    position:absolute;
+    top:15%;
+    left:43%;
+}
+.insta{
+    width:3.5vh;
+}
+.youtube{
+    width:3.5vh;
+}
+.nav-item a{
+    font-size:2vh;
+}
+#videoIntro{
+    height:80vh
+}
+#videoWords{
+   position:fixed;
+    opacity:80%;
+    background-color:transparent;
+    height:100%;
+    border-width:0;
+    left:0;
+}
+.videoText h1{
+    margin: 0 0 0 0;
+    padding: 3% 0% 0% 0% ; 
+    font-size: 12vw;
+}
+#videoPage{
+    height:80vh;
+}
+.audioText h1{
+    margin: 0 0 0 0 ;
+    padding: 3% 0 0 0 ;
+    opacity:100%;
+    font-size:12vw;
+}
+.homeVideo{
+    overflow: hidden;     
+    height:auto;
+    height:100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    
+}
+#audioPage{
+    height:80vh;
+}
+.audioBG{
+    background-image: url(mic.JPG);
+    background-repeat:no-repeat;
+    background-size: auto 100vh;
+    background-position-x:60%;
+    background-position-y:0%;
+    opacity:80%;
+}
+.audioContainer{
+    overflow:hidden;
+    position:relative;
+    margin-right:0;
+    height:40vh;
+    width:100%;
+    margin-bottom: 3%;
+    padding:5% 0 0 0 ;
+}
+.mobileDisplay{
+    display: inline ;
+}
+.mobileNotDisplay{
+    display: none;
+}
+.videoContainer{
+    overflow:hidden;
+    position:relative;
+    height:40%;
+    width:100%;
+    margin:0% 0 0 0;
+    padding:0 0% 0 0;
+    margin-bottom: 3%;
+}
+
+
+}
+

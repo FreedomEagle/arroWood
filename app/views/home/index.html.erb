@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag "application" %>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<div class = 'container-fluid'>
+    <div id='logoBox'>
+    <%= video_tag "logo.mp4", :autoplay => true, muted: true, loop: :loop, class: "logoVid"%>    
+    </div>
+    <%= render "shared/nav" %>
+    <%= render 'shared/aboutContact' %>
+    <%= render 'shared/contact_form' %>
+    <div class = 'row no-gutters bodyContainer'>
+        <%= render 'shared/videoIntro' %> 
+        <%= render "shared/audioPage" %>
+        <%= render "shared/footer" %>
+    </div>
+
+
+ </div>
