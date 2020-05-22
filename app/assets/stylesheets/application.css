@@ -1,5 +1,4 @@
- @import "~bootstrap";
- @import "~bootstrap/scss/bootstrap";
+ @import "bootstrap";
  @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bevan&Ropa+Sans&display=swap');
 
  body{
